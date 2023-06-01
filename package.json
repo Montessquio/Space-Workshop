@@ -1,0 +1,24 @@
+{
+  "name": "spacefactory",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "css-loader": "^6.8.1",
+    "extract-loader": "^4.0.3",
+    "html-webpack-plugin": "^5.5.1",
+    "style-loader": "^3.3.3"
+  },
+  "scripts": {
+    "serve": "webpack serve --open"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "sass-loader": "^13.3.1",
+    "ts-loader": "^9.4.3",
+    "typescript": "^5.0.4",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
+  }
+}

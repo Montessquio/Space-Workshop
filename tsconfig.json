@@ -1,0 +1,15 @@
+{
+  "include": [
+    "src/*"
+, "src/node.ts"  ],
+  "type": "module",
+  "compilerOptions": {
+    "outDir": "./public/",
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "esnext",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "moduleResolution": "node"
+  }
+}

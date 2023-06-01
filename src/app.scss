@@ -1,0 +1,121 @@
+$background: #444444;
+$text: #f2f2f2;
+$text-shadow: #ffffff;
+
+body {
+    margin: 5% auto;
+    background: $background;
+    color: $text;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    text-shadow: 0 1px 0 $text-shadow;
+    width: 100%;   
+}
+
+button {
+    border-radius: 0;
+    font-family: 'Consolas';
+    flex-grow: 0;
+}
+
+#content {
+    margin: 5% 20% 5% 10%;
+    height: 100%;
+
+    td {
+        vertical-align: top;
+    }
+}
+
+#thoughts-log {
+    width: 36ch;
+    height: 10em;
+    line-height: 1.2;
+
+    overflow: auto;
+    display: flex;
+    flex-flow: row-reverse wrap;
+
+    p {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+}
+
+#play-area {
+    display: flex;
+}
+
+#energy {
+    font-family: Consolas;
+}
+
+.node {
+    height: 8ch;
+    width: 48ch;
+    border: 1px solid black;
+    margin-bottom: 1ch;
+
+    div {
+        margin-left: 20px;
+    }
+
+    h3,h5,p {
+        margin: 0;
+    }
+}
+
+.node-broken {
+    background-color: black;
+    background-image: url('data:image/svg+xml,<svg width="240" height="320" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg"><pattern id="diagonalHatch" patternUnits="userSpaceOnUse" width="4" height="4"> <path d="M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2" style="stroke:rgb(128, 108, 0); stroke-width:1" /></pattern><rect x="0" y="0" width="100%" height="100%" fill="url(%23diagonalHatch)"/></svg>');
+    background-repeat: repeat-x;
+    background-size: fill;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.node-disabled {
+    background-color: gray;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.node-alive {
+    background-color: navy;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+#node-Mithril-ui:not(:empty) {
+    margin: 0 20px 0 20px;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid black;
+    width: 48ch;
+    height: 64ch;
+}
+
+#mithril-recipe-requirements {
+    font-family: Consolas;
+    white-space: pre-wrap;
+    line-height: 1;
+}
+
+code {
+    background: white;
+}
+
+a {
+    border-bottom: 1px solid #444444;
+    color: #444444;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 0;
+}
